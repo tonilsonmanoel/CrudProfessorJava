@@ -37,12 +37,13 @@ public class ServletBuscar extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
-              int id = Integer.valueOf(request.getParameter("codigo"));
+              
               
              
             Professor u = new Professor();//criando o objeto do tipo entidade para setar o valores de retorno
+            u.setCodigo(Integer.valueOf(request.getParameter("codigo")));
             ManterProfessor dao = new ManterProfessor();//criando o objeto do tipo dao para executar o metodo pesquisar
-            u=dao.pesquisar(id);
+            u=dao.pesquisar(u);
             request.setAttribute("uCodigo", u.getCodigo());
             request.setAttribute("uNome",u.getNome());
             request.setAttribute("uDisciplina",u.getDisciplina());

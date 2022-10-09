@@ -67,13 +67,13 @@ public class ManterProfessor extends DAO{
        }
    }
    // Inicio Pesquisar 
-   public Professor pesquisar(int id) throws Exception{
+   public Professor pesquisar(Professor pf) throws Exception{
        try {
-           Professor pf = new Professor();
+           //Professor pf = new Professor();
            abrirBanco();
            String query = "select * FROM professor where codigo=?";
            ps = con.prepareStatement(query);
-           ps.setInt(1, id);
+           ps.setInt(1,pf.getCodigo());
            ResultSet rs = ps.executeQuery();
            if (rs.next()){
                pf.setCodigo(rs.getInt("codigo"));
