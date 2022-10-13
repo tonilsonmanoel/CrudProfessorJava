@@ -82,6 +82,7 @@ public class ManterProfessor extends DAO{
                pf.setTurno(rs.getString("turno"));
                return pf;
            }
+           fecharBanco();
        } catch (Exception e) {
            System.out.println("Erro"+ e.getMessage());
        }

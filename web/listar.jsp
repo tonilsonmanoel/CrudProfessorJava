@@ -25,8 +25,9 @@
     <tr>
       <th scope="col">Codigo</th>
       <th scope="col">Nome</th>
-      <th scope="col">Disciplina</th>
-      <th scope="col">Turno</th>
+      <th scope="col">Preço</th>
+      <th scope="col">Categoria</th>
+      <th scope="col">Quantidade</th>
       <th scope="col"></th>
       <th scope="col"></th>
     </tr>

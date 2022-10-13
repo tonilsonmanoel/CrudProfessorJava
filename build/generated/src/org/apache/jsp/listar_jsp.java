@@ -67,8 +67,9 @@ public final class listar_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    <tr>\n");
       out.write("      <th scope=\"col\">Codigo</th>\n");
       out.write("      <th scope=\"col\">Nome</th>\n");
-      out.write("      <th scope=\"col\">Disciplina</th>\n");
-      out.write("      <th scope=\"col\">Turno</th>\n");
+      out.write("      <th scope=\"col\">Preço</th>\n");
+      out.write("      <th scope=\"col\">Categoria</th>\n");
+      out.write("      <th scope=\"col\">Quantidade</th>\n");
       out.write("      <th scope=\"col\"></th>\n");
       out.write("      <th scope=\"col\"></th>\n");
       out.write("    </tr>\n");
